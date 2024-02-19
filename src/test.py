@@ -1,4 +1,4 @@
-from request import (
+from epic_api import (
     get_read_api,
     get_search_api,
     VERSIONS,
