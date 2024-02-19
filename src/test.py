@@ -47,10 +47,8 @@ def test1():
 @threaded
 def test2():
     query = {
-        "docstatus": "final",
         "patient": "enh2Q1c0oNRtWzXArnG4tKw3",
-        "type": "11506-3",
-        "_count": 20,
+        "_count": 100,
     }
     status_code = get_search_api(
         f"test2_{query['patient']}",
@@ -109,10 +107,13 @@ def test6():
     save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test6_Mychart")
 
 
+def test7():
+    result = url_get_api(
+        "R4/DocumentReference?patient=e7XZi7JJ6AZSxlmZBc9-Rdw3&category=clinical-note&_count=3"
+    )
+    print("test7:", result.status_code)
+    save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test7_note")
+
+
 if __name__ == "__main__":
-    test1()
     test2()
-    test3()
-    test4()
-    test5()
-    test6()
