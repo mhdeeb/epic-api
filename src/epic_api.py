@@ -21,30 +21,34 @@ MIME2EXT = {
 }
 
 
-class VERSIONS(str):
+class VERSION(str):
     STU3 = "STU3"
     R4 = "R4"
 
 
-class RESOURCES(str):
+class RESOURCE(str):
     DOCUMENT_REFERENCE = "DocumentReference"
     BINARY = "Binary"
     PATIENT = "Patient"
 
 
-def get_api(file: str, version: str, type: str, query: dict = None, *append_paths):
+def get_api(
+    version: str, type: str, query: dict = None, *append_paths
+) -> requests.Response:
 
     query_string = ""
 
-    if query != None and len(query) > 0:
+    if query and len(query) > 0:
         query_string = "?" + "&".join(["=".join(item) for item in query.items()])
 
     url = "/".join((API, version, type, *append_paths)) + query_string
 
-    r = requests.get(url=url, headers=credentials)
+    return requests.get(url=url, headers=credentials)
 
-    if r.status_code == requests.codes.ok:
-        content_type = r.headers["Content-Type"]
+
+def save_file(response: requests.Response, filename: str) -> None:
+    if response.status_code == requests.codes.ok:
+        content_type = response.headers["Content-Type"]
 
         content_type_tokens = content_type.split("; ")
 
@@ -57,16 +61,18 @@ def get_api(file: str, version: str, type: str, query: dict = None, *append_path
             if content_type_data[0] == "charset":
                 charset = content_type_data[1]
 
-        output_file = Path(f"data/{file}.{file_extention}")
+        output_file = Path(f"data/{filename}.{file_extention}")
         output_file.parent.mkdir(exist_ok=True, parents=True)
-        output_file.write_text(r.text, encoding=charset)
+        output_file.write_text(response.text, encoding=charset)
 
 
 def get_search_api(
     filename: str, directory: str, version: str, resource: str, query: dict = None
-):
-    get_api(f"{directory}/{filename}", version, resource, query)
+) -> None:
+    result = get_api(version, resource, query)
+    save_file(result, f"{directory}/{filename}")
 
 
-def get_read_api(id: str, directory: str, version: str, resource: str):
-    get_api(f"{directory}/{id}", version, resource, None, id)
+def get_read_api(id: str, directory: str, version: str, resource: str) -> None:
+    result = get_api(version, resource, None, id)
+    save_file(result, f"{directory}/{id}")
