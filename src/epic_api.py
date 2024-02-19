@@ -36,14 +36,9 @@ def get_api(
     version: str, type: str, query: dict = None, *append_paths
 ) -> requests.Response:
 
-    query_string = ""
+    url = "/".join((API, version, type, *append_paths))
 
-    if query and len(query) > 0:
-        query_string = "?" + "&".join(["=".join(item) for item in query.items()])
-
-    url = "/".join((API, version, type, *append_paths)) + query_string
-
-    return requests.get(url=url, headers=credentials)
+    return requests.get(url=url, headers=credentials, params=query)
 
 
 def save_file(response: requests.Response, filename: str) -> None:
@@ -68,11 +63,17 @@ def save_file(response: requests.Response, filename: str) -> None:
 
 def get_search_api(
     filename: str, directory: str, version: str, resource: str, query: dict = None
-) -> None:
+) -> int:
     result = get_api(version, resource, query)
     save_file(result, f"{directory}/{filename}")
+    return result.status_code
 
 
-def get_read_api(id: str, directory: str, version: str, resource: str) -> None:
+def get_read_api(id: str, directory: str, version: str, resource: str) -> int:
     result = get_api(version, resource, None, id)
     save_file(result, f"{directory}/{id}")
+    return result.status_code
+
+
+def url_get_api(url: str) -> requests.Response:
+    return requests.get(f"{API}/{url}", headers=credentials)
