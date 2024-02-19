@@ -140,8 +140,7 @@ def patient_to_notes(id: str):
     }
     result = get_api(VERSION.STU3, RESOURCE.DOCUMENT_REFERENCE, query)
     result.text
-    tree = ET.fromstring(result.text)
-    root = tree.getroot()
+    root = ET.fromstring(result.text)
 
     @threaded
     def req(url: str, filename: str) -> None:
