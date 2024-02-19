@@ -132,5 +132,30 @@ def test8():
         req(url)
 
 
+def patient_to_notes(id: str):
+    query = {
+        "patient": id,
+        "class": "clinical-note",
+        "_count": 100,
+    }
+    result = get_api(VERSION.STU3, RESOURCE.DOCUMENT_REFERENCE, query)
+    result.text
+    tree = ET.fromstring(result.text)
+    root = tree.getroot()
+
+    @threaded
+    def req(url: str, filename: str) -> None:
+        result = url_get_api(url)
+        print(result.status_code)
+        save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/{filename}")
+
+    for child in root.findall(
+        ".//{http://hl7.org/fhir}attachment/{http://hl7.org/fhir}url"
+    ):
+        last_three = child.attrib["value"].rsplit("/", 3)[1:]
+        url = "/".join(last_three)
+        req(url, f"{id}_{last_three[-1]}")
+
+
 if __name__ == "__main__":
-    test8()
+    patient_to_notes("enh2Q1c0oNRtWzXArnG4tKw3")
