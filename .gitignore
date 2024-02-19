@@ -1,0 +1,4 @@
+.venv/
+patients/
+clinical_notes/
+credentials.json

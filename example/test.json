@@ -1,0 +1,1593 @@
+{
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 17,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference?class=clinical-note&patient=enh2Q1c0oNRtWzXArnG4tKw3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eHE62YRPaIWpImLd6y8uOAQ3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eHE62YRPaIWpImLd6y8uOAQ3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eHE62YRPaIWpImLd6y8uOAQ3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "217022"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2023-05-08T20:00:05Z",
+          "indexed": "2023-05-08T20:00:05Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/ectJdzC4FAPI0NV2bCf3RGw3",
+              "display": "Stephen Prov Fedewa, MD"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eqwL51yc.8a6agwXsiHt-VA3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/eBCPoD5b1rdhcFh1aOuAAMw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "40562"
+              },
+              "display": "Office Visit"
+            },
+            "period": {
+              "start": "2023-05-08T19:56:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/ec3Fd-CWlyXJIdHy2ogo5Xg3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/ec3Fd-CWlyXJIdHy2ogo5Xg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ec3Fd-CWlyXJIdHy2ogo5Xg3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195035"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-03-13T18:35:11Z",
+          "indexed": "2019-03-13T18:35:11Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eeBl-ySJMCBtDT38pPJZG3Q3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/evMpHM0rkdOq6H0C5elreOA3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/evMpHM0rkdOq6H0C5elreOA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "evMpHM0rkdOq6H0C5elreOA3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195033"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-27T22:42:13Z",
+          "indexed": "2019-02-27T22:42:13Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eR-nr816Fngc3rsyAmbL.9w3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eL4pVmbDYY4C3JqM-3ovAVg3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eL4pVmbDYY4C3JqM-3ovAVg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eL4pVmbDYY4C3JqM-3ovAVg3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195032"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-27T22:42:12Z",
+          "indexed": "2019-02-27T22:42:12Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eSO1w6dzKQJ5wrwOUY-ijDg3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eCStwYx0QJKXWbYqpgk4ZTw3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eCStwYx0QJKXWbYqpgk4ZTw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eCStwYx0QJKXWbYqpgk4ZTw3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195031"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-27T22:41:21Z",
+          "indexed": "2019-02-27T22:41:21Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eQeUuf2ua39zf1CggcV3.mw3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/ebN5kqOLxf6RJH9zouFfVOg3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/ebN5kqOLxf6RJH9zouFfVOg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ebN5kqOLxf6RJH9zouFfVOg3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195010"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-12T20:51:09Z",
+          "indexed": "2019-02-12T20:51:09Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/e2TKrJrCoCPRNBNXB.qBs.Q3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eYzy8-VJBZ8k6yllSY3IZQA3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eYzy8-VJBZ8k6yllSY3IZQA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eYzy8-VJBZ8k6yllSY3IZQA3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195009"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-11T20:39:33Z",
+          "indexed": "2019-02-11T20:39:33Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eUva2wpwFMiuf-SEI.JtUug3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eJC5iN-07bYSQjCDeEI-Xcg3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eJC5iN-07bYSQjCDeEI-Xcg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eJC5iN-07bYSQjCDeEI-Xcg3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195008"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-11T20:29:52Z",
+          "indexed": "2019-02-11T20:29:52Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eCpyhAeK-lAdZ5MHFzJPXpQ3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eeiSL1nUDYr3wjCgj9iZIjg3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eeiSL1nUDYr3wjCgj9iZIjg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eeiSL1nUDYr3wjCgj9iZIjg3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195007"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-11T19:35:37Z",
+          "indexed": "2019-02-11T19:35:37Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/ehNhTNB1UTkVEVRlV1PCaJg3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eu9mV9K7EF2TdBHxDMVCeWg3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eu9mV9K7EF2TdBHxDMVCeWg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eu9mV9K7EF2TdBHxDMVCeWg3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195006"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-11T19:35:36Z",
+          "indexed": "2019-02-11T19:35:36Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/ewKOYdomufvTZ6WaDbQYdJw3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/e0zS-XnsJ3aSegMBOEy2Y9Q3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/e0zS-XnsJ3aSegMBOEy2Y9Q3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "e0zS-XnsJ3aSegMBOEy2Y9Q3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195005"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-11T19:34:51Z",
+          "indexed": "2019-02-11T19:34:51Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/e1xQ5PpbFFaR7ojc3ID6xjQ3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eEKBsoincTfiVnnumPsx44w3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eEKBsoincTfiVnnumPsx44w3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eEKBsoincTfiVnnumPsx44w3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195004"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-11T18:55:56Z",
+          "indexed": "2019-02-11T18:55:56Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/efKdb78jWmpB99jAuT6wBeg3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/er0KHx5bBj9K.EabtVPpqzw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "23490"
+              },
+              "display": "Registration"
+            },
+            "period": {
+              "start": "2015-12-02T03:19:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/e.WCJ05Nnp3QTM3FuCWA4mQ3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/e.WCJ05Nnp3QTM3FuCWA4mQ3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "e.WCJ05Nnp3QTM3FuCWA4mQ3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "194958"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2018-12-15T00:13:48Z",
+          "indexed": "2018-12-15T00:13:48Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/e5SI3NFbPuHSfk.lLzb44lA3",
+              "display": "Epcci, MD"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eryPh4a.5NMWeo3IzAOCLBQ3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/eqDxZJc43imReA1Ykea5uAw3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "20170"
+              },
+              "display": "Office Visit"
+            },
+            "period": {
+              "start": "2014-11-14T22:23:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eOLH4Kkwr3EccF5wP3ElpEA3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eOLH4Kkwr3EccF5wP3ElpEA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eOLH4Kkwr3EccF5wP3ElpEA3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195030"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-22T17:39:26Z",
+          "indexed": "2019-02-22T17:39:26Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/egilrT.7aBxtyoORIH89gzQ3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/eMGzT5bnxPcFw8-6t2BzDJA3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "1832"
+              },
+              "display": "Appointment"
+            },
+            "period": {
+              "start": "2013-11-08T16:00:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/ex4NrvxmVX9NG0DdFCN2V2w3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/ex4NrvxmVX9NG0DdFCN2V2w3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ex4NrvxmVX9NG0DdFCN2V2w3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195029"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2019-02-21T23:17:57Z",
+          "indexed": "2019-02-21T23:17:57Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "display": "User Epic"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eGU81jGC67wCDBJHUkRka1g3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/eMGzT5bnxPcFw8-6t2BzDJA3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "1832"
+              },
+              "display": "Appointment"
+            },
+            "period": {
+              "start": "2013-11-08T16:00:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eaVIuvQFCVaaR7GrjQcZmDA3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eaVIuvQFCVaaR7GrjQcZmDA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eaVIuvQFCVaaR7GrjQcZmDA3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "128697"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2012-11-29T21:00:00Z",
+          "indexed": "2012-11-29T21:00:00Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/eUXiD4IyBLJFoR2VHOjfTdg3",
+              "display": "Physician Family Medicine, MD"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eYLac7EzK8iGu7CKYW63vdQ3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "1835"
+              },
+              "display": "Office Visit"
+            },
+            "period": {
+              "start": "2012-11-29T21:00:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eaj3ux4SEiI7rbbzuFdDxgw3"
+          }
+        ],
+        "fullUrl": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/DocumentReference/eaj3ux4SEiI7rbbzuFdDxgw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eaj3ux4SEiI7rbbzuFdDxgw3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "128696"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Provider-unspecified Progress note"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              }
+            ],
+            "text": "Provider-unspecified Progress note"
+          },
+          "class": {
+            "coding": [
+              {
+                "system": "https://argonautproject.github.io/clinicalnotes/ValueSet-documentreference-category.html",
+                "code": "clinical-notes",
+                "display": "Clinical Notes"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                "code": "clinical-note",
+                "display": "Clinical Note"
+              }
+            ],
+            "text": "Clinical Notes"
+          },
+          "subject": {
+            "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Patient/enh2Q1c0oNRtWzXArnG4tKw3",
+            "display": "M, Damon"
+          },
+          "created": "2012-10-28T20:43:19Z",
+          "indexed": "2012-10-28T20:43:19Z",
+          "author": [
+            {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Practitioner/eUXiD4IyBLJFoR2VHOjfTdg3",
+              "display": "Physician Family Medicine, MD"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Binary/eg4fJc05sfoaQbrgtHCQA8w3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": {
+              "reference": "https://vendorservices.epic.com/interconnect-amcurprd-oauth/api/FHIR/STU3/Encounter/eGBa8bqzKut7a4J4.Qf4V9A3",
+              "identifier": {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                "value": "1838"
+              },
+              "display": "Office Visit"
+            },
+            "period": {
+              "start": "2012-10-28T20:43:19Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
