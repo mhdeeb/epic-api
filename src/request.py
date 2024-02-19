@@ -57,7 +57,7 @@ def get_api(file: str, version: str, type: str, query: dict = None, *append_path
             if content_type_data[0] == "charset":
                 charset = content_type_data[1]
 
-        output_file = Path(f"{file}.{file_extention}")
+        output_file = Path(f"data/{file}.{file_extention}")
         output_file.parent.mkdir(exist_ok=True, parents=True)
         output_file.write_text(r.text, encoding=charset)
 
@@ -70,13 +70,3 @@ def get_search_api(
 
 def get_read_api(id: str, directory: str, version: str, resource: str):
     get_api(f"{directory}/{id}", version, resource, None, id)
-
-
-PATIENT_DIRECTORY = "patients"
-CLINICAL_NOTES_DIRECTORY = "clinical_notes"
-
-ID = "eqwL51yc.8a6agwXsiHt-VA3"
-get_read_api(ID, CLINICAL_NOTES_DIRECTORY, VERSIONS.R4, RESOURCES.BINARY)
-
-query = {"family": "lufhir", "given": "kazuya", "birthdate": "1986-02-23"}
-get_search_api("test", PATIENT_DIRECTORY, VERSIONS.R4, RESOURCES.PATIENT, query)
