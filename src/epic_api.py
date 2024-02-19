@@ -2,8 +2,6 @@ import requests
 import json
 from pathlib import Path
 
-API = "https://vendorservices.epic.com/interconnect-amcurprd-username/api/FHIR"
-
 
 def get_credentials(credentials_path: str):
     data = None
@@ -12,12 +10,11 @@ def get_credentials(credentials_path: str):
     return data
 
 
-credentials = get_credentials("credentials.json")
-
 MIME2EXT = {
     "text/html": "html",
     "text/rtf": "rtf",
     "application/xml": "xml",
+    "application/json": "json",
 }
 
 
@@ -32,13 +29,38 @@ class RESOURCE(str):
     PATIENT = "Patient"
 
 
-def get_api(
-    version: str, type: str, query: dict = None, *append_paths
-) -> requests.Response:
+class epic_api:
+    def __init__(self, credentials_path: str, api: str):
+        self.credentials = get_credentials(credentials_path)
+        self.api = api
 
-    url = "/".join((API, version, type, *append_paths))
+    def get_api(
+        self, version: str, type: str, query: dict = None, *append_paths
+    ) -> requests.Response:
 
-    return requests.get(url=url, headers=credentials, params=query)
+        url = "/".join((self.api, version, type, *append_paths))
+
+        return requests.get(url=url, headers=self.credentials, params=query)
+
+    def get_search_api(
+        self,
+        filename: str,
+        directory: str,
+        version: str,
+        resource: str,
+        query: dict = None,
+    ) -> int:
+        result = self.get_api(version, resource, query)
+        save_file(result, f"{directory}/{filename}")
+        return result.status_code
+
+    def get_read_api(self, id: str, directory: str, version: str, resource: str) -> int:
+        result = self.get_api(version, resource, None, id)
+        save_file(result, f"{directory}/{id}")
+        return result.status_code
+
+    def url_get_api(self, url: str) -> requests.Response:
+        return requests.get(f"{self.api}/{url}", headers=self.credentials)
 
 
 def save_file(response: requests.Response, filename: str) -> None:
@@ -59,21 +81,3 @@ def save_file(response: requests.Response, filename: str) -> None:
         output_file = Path(f"data/{filename}.{file_extention}")
         output_file.parent.mkdir(exist_ok=True, parents=True)
         output_file.write_text(response.text, encoding=charset)
-
-
-def get_search_api(
-    filename: str, directory: str, version: str, resource: str, query: dict = None
-) -> int:
-    result = get_api(version, resource, query)
-    save_file(result, f"{directory}/{filename}")
-    return result.status_code
-
-
-def get_read_api(id: str, directory: str, version: str, resource: str) -> int:
-    result = get_api(version, resource, None, id)
-    save_file(result, f"{directory}/{id}")
-    return result.status_code
-
-
-def url_get_api(url: str) -> requests.Response:
-    return requests.get(f"{API}/{url}", headers=credentials)

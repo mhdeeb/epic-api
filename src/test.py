@@ -1,8 +1,5 @@
 from epic_api import (
-    get_api,
-    get_read_api,
-    get_search_api,
-    url_get_api,
+    epic_api,
     save_file,
     VERSION,
     RESOURCE,
@@ -35,11 +32,16 @@ def threaded(fn) -> Future:
 PATIENT_DIRECTORY = "patients"
 CLINICAL_NOTES_DIRECTORY = "clinical_notes"
 
+api = epic_api(
+    "credentials.json",
+    "https://vendorservices.epic.com/interconnect-amcurprd-username/api/FHIR",
+)
+
 
 @threaded
 def test1():
     ID = "eqwL51yc.8a6agwXsiHt-VA3"
-    status_code = get_read_api(
+    status_code = api.get_read_api(
         ID, CLINICAL_NOTES_DIRECTORY, VERSION.R4, RESOURCE.BINARY
     )
     print("test1:", status_code)
@@ -52,7 +54,7 @@ def test2():
         "class": "clinical-note",
         "_count": 100,
     }
-    status_code = get_search_api(
+    status_code = api.get_search_api(
         f"test2_{query['patient']}",
         PATIENT_DIRECTORY,
         VERSION.STU3,
@@ -65,7 +67,7 @@ def test2():
 @threaded
 def test3():
     ID = "eqwL51yc.8a6agwXsiHt-VA3"
-    result = get_api(VERSION.R4, RESOURCE.BINARY, None, ID)
+    result = api.get_api(VERSION.R4, RESOURCE.BINARY, None, ID)
     print("test3:", result.status_code)
     save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test3_{ID}")
 
@@ -76,7 +78,7 @@ def test4():
         "class": "clinical-note",
         "patient": "enh2Q1c0oNRtWzXArnG4tKw3",
     }
-    result = get_api(VERSION.STU3, RESOURCE.DOCUMENT_REFERENCE, query)
+    result = api.get_api(VERSION.STU3, RESOURCE.DOCUMENT_REFERENCE, query)
     print("test4:", result.status_code)
     save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test4_{query['patient']}")
 
@@ -93,7 +95,7 @@ def test5():
         "given": "Allison",
         "telecom": "608-123-4567",
     }
-    result = get_api(VERSION.R4, RESOURCE.PATIENT, query)
+    result = api.get_api(VERSION.R4, RESOURCE.PATIENT, query)
     print("test5:", result.status_code)
     save_file(
         result, f"{CLINICAL_NOTES_DIRECTORY}/test5_{query['given']}_{query['family']}"
@@ -102,7 +104,7 @@ def test5():
 
 @threaded
 def test6():
-    result = url_get_api(
+    result = api.url_get_api(
         "R4/Patient?address=123 Main St.&address-city=Madison&address-postalcode=53703&address-state=Wisconsin&family=Mychart&gender=Female&given=Allison&telecom=608-123-4567"
     )
     print("test6:", result.status_code)
@@ -111,7 +113,7 @@ def test6():
 
 @threaded
 def test7():
-    result = url_get_api("STU3/Binary/eeBl-ySJMCBtDT38pPJZG3Q3")
+    result = api.url_get_api("STU3/Binary/eeBl-ySJMCBtDT38pPJZG3Q3")
     print("test7:", result.status_code)
     save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test7_note")
 
@@ -122,7 +124,7 @@ def test8():
 
     @threaded
     def req(url: str) -> None:
-        result = url_get_api(url)
+        result = api.url_get_api(url)
         print(result.status_code)
         save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test8_{url[-1]}")
 
@@ -140,13 +142,13 @@ def patient_to_notes(id: str):
         "class": "clinical-note",
         "_count": 100,
     }
-    result = get_api(VERSION.STU3, RESOURCE.DOCUMENT_REFERENCE, query)
+    result = api.get_api(VERSION.STU3, RESOURCE.DOCUMENT_REFERENCE, query)
     print("patient_get:", "OK" if result.status_code == 200 else "FAIL")
     root = ET.fromstring(result.text)
 
     @threaded
     def req(url: str, filename: str) -> None:
-        result = url_get_api(url)
+        result = api.url_get_api(url)
         print(f"{filename}: {'OK' if result.status_code==200 else 'FAIL'}")
         save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/{filename}")
 
