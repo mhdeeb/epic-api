@@ -10,6 +10,7 @@ from epic_api import (
 from threading import Thread
 from traceback import print_exc
 from concurrent.futures import Future
+import xml.etree.ElementTree as ET
 
 
 def threaded(fn) -> Future:
@@ -48,6 +49,7 @@ def test1():
 def test2():
     query = {
         "patient": "enh2Q1c0oNRtWzXArnG4tKw3",
+        "class": "clinical-note",
         "_count": 100,
     }
     status_code = get_search_api(
@@ -108,12 +110,27 @@ def test6():
 
 
 def test7():
-    result = url_get_api(
-        "R4/DocumentReference?patient=e7XZi7JJ6AZSxlmZBc9-Rdw3&category=clinical-note&_count=3"
-    )
+    result = url_get_api("STU3/Binary/eeBl-ySJMCBtDT38pPJZG3Q3")
     print("test7:", result.status_code)
     save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test7_note")
 
 
+def test8():
+    tree = ET.parse(f"data/{PATIENT_DIRECTORY}/test2_enh2Q1c0oNRtWzXArnG4tKw3.xml")
+
+    @threaded
+    def req(url: str) -> None:
+        result = url_get_api(url)
+        print(result.status_code)
+        save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test8_{url[-1]}")
+
+    root = tree.getroot()
+    for child in root.findall(
+        ".//{http://hl7.org/fhir}attachment/{http://hl7.org/fhir}url"
+    ):
+        url = "/".join(child.attrib["value"].rsplit("/", 3)[1:])
+        req(url)
+
+
 if __name__ == "__main__":
-    test2()
+    test8()
