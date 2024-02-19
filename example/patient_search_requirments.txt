@@ -1,6 +1,12 @@
 Patient.Search requests require one of the following minimum data sets by default in order to match and return a patient record:
+
 FHIR ID;
 SSN;
 ID with or without an ID Type;
 Given name, family name, and birthdate;
 Given name, family name, legal sex, and phone number/email
+
+Patient.Search (STU3)
+Patient.Search (R4)
+List.Search (Patient List) (STU3)
+List.Search (Patient List) (R4)

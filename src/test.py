@@ -109,12 +109,14 @@ def test6():
     save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test6_Mychart")
 
 
+@threaded
 def test7():
     result = url_get_api("STU3/Binary/eeBl-ySJMCBtDT38pPJZG3Q3")
     print("test7:", result.status_code)
     save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/test7_note")
 
 
+@threaded
 def test8():
     tree = ET.parse(f"data/{PATIENT_DIRECTORY}/test2_enh2Q1c0oNRtWzXArnG4tKw3.xml")
 
@@ -139,13 +141,13 @@ def patient_to_notes(id: str):
         "_count": 100,
     }
     result = get_api(VERSION.STU3, RESOURCE.DOCUMENT_REFERENCE, query)
-    result.text
+    print("patient_get:", "OK" if result.status_code == 200 else "FAIL")
     root = ET.fromstring(result.text)
 
     @threaded
     def req(url: str, filename: str) -> None:
         result = url_get_api(url)
-        print(result.status_code)
+        print(f"{filename}: {'OK' if result.status_code==200 else 'FAIL'}")
         save_file(result, f"{CLINICAL_NOTES_DIRECTORY}/{filename}")
 
     for child in root.findall(
